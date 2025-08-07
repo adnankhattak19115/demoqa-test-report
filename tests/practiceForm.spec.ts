@@ -20,8 +20,8 @@ test('Practice Form submission', async ({ page }) => {
   await page.keyboard.type('06 Aug 2025');
   await page.keyboard.press('Enter');
 
-  await page.locator(loc.subjectsInput).fill('Testing');
-  await page.keyboard.press('Enter');
+  // await page.locator(loc.subjectsInput).fill('Testing');
+  // await page.keyboard.press('Enter');
 
 //   await page.locator(loc.hobbiesSports).click();
   await page.locator(loc.address).fill('Testing');

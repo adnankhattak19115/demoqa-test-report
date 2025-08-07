@@ -106,3 +106,56 @@ export const alertsPageLocators = {
   triggerAlertButton: "//button[@id='alertButton']",
 };
 
+// locators/widgetsPageLocators.ts
+export const accordianLocators = {
+  accordianMenu: "//span[normalize-space()='Accordian']",
+  section1: "//div[normalize-space()='What is Lorem Ipsum?']",
+  section1Text: "//p[contains(text(),'Lorem Ipsum is simply dummy text of the printing a')]",
+  section2: "//div[normalize-space()='Where does it come from?']",
+  section2Text: "//p[contains(text(),'Contrary to popular belief, Lorem Ipsum is not sim')]"
+};
+
+// locators/widgetsPageLocators.ts
+export const autoCompleteLocators = {
+  accordianMenu: "//span[normalize-space()='Accordian']",
+  autoCompleteMenu: "//span[normalize-space()='Auto Complete']",
+
+  multiColorInput: "#autoCompleteMultipleInput",
+  multiColorOptionBlue: "div[id*='react-select'] div:has-text('Blue')",
+  multiColorOptionRed: "div[id*='react-select'] div:has-text('Red')",
+  multiColorOptionGreen: "div[id*='react-select'] div:has-text('Green')",
+
+  singleColorInput: "#autoCompleteSingleInput",
+  singleColorOptionRed: "div[id*='react-select'] div:has-text('Red')"
+};
+
+export const datePickerLocators = {
+  datePickerButton: "//span[normalize-space()='Date Picker']",
+  selectDateInput: "//input[@id='datePickerMonthYearInput']",
+  selectDateTimeInput: "//input[@id='dateAndTimePickerInput']",
+};
+
+// locators/widgetsPageLocators.ts
+export const sliderLocators = {
+  widgetsSection: "//h5[normalize-space()='Widgets']",
+  sliderMenuItem: "//span[normalize-space()='Slider']",
+  sliderInput: "input[type='range']",
+  sliderValueBox: "#sliderValue"
+};
+
+// locators/widgetsPageLocators.ts
+export const progressBarLocators = {
+  widgetsSection: "//h5[normalize-space()='Widgets']",
+  progressBarMenuItem: "//span[normalize-space()='Progress Bar']",
+  startStopButton: "#startStopButton"
+};
+
+// locators/widgetsPageLocators.ts
+export const tabsLocators = {
+  widgetsSection: "//h5[normalize-space()='Widgets']",
+  tabsMenuItem: "//span[normalize-space()='Tabs']",
+  whatTab: '#demo-tab-what',
+  whatTabText: "//p[contains(text(),'Lorem Ipsum is simply dummy text of the printing a')]",
+  originTab: '#demo-tab-origin',
+  originTabText: "//p[contains(text(),'Contrary to popular belief, Lorem Ipsum is not sim')]"
+};

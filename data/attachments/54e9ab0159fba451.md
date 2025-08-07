@@ -1,0 +1,69 @@
+# Page snapshot
+
+```yaml
+- img "adplus-dvertising"
+- banner:
+  - link:
+    - /url: https://demoqa.com
+    - img
+- img
+- text: Elements
+- img
+- img
+- text: Forms
+- img
+- list:
+  - listitem:
+    - img
+    - text: Practice Form
+- img
+- text: Alerts, Frame & Windows
+- img
+- img
+- text: Widgets
+- img
+- img
+- text: Interactions
+- img
+- img
+- text: Book Store Application
+- img
+- heading "Practice Form" [level=1]
+- heading "Student Registration Form" [level=5]
+- text: Name
+- textbox "First Name": Adnan
+- textbox "Last Name": Khattak
+- text: Email
+- textbox "name@example.com": test@gmail.com
+- text: Gender
+- radio "Male" [checked]
+- text: Male
+- radio "Female"
+- text: Female
+- radio "Other"
+- text: Other Mobile(10 Digits)
+- textbox "Mobile Number": "1234567891"
+- text: Date of Birth
+- textbox: 06 Aug 2025
+- text: Subjects
+- paragraph
+- paragraph: 0 results available. Select is focused ,type to refine list, press Down to open the menu, press left to focus selected values
+- textbox
+- text: Hobbies
+- checkbox "Sports"
+- text: Sports
+- checkbox "Reading"
+- text: Reading
+- checkbox "Music"
+- text: Music Picture Select picture
+- button "Select picture"
+- text: Current Address
+- textbox "Current Address": Testing
+- text: State and City Select State
+- textbox
+- text: Select City
+- textbox [disabled]
+- button "Submit"
+- img "Build PlayWright tests with AI"
+- contentinfo: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
