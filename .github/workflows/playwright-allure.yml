@@ -1,5 +1,3 @@
-name: Playwright Tests with Allure
-
 on:
   push:
     branches: [ main ]
@@ -36,6 +34,6 @@ jobs:
       - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./allure-report
-        publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
