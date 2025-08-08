@@ -13,7 +13,7 @@ test('Tabs content visibility test', async ({ page }) => {
   await page.locator(loc.tabsMenuItem).click();
 
   // Click on 'What' tab and verify content
-  await page.locator(loc.whatTab).click();
+  await page.locator(loc.whatTab).click();  
   await expect(page.locator(loc.whatTabText)).toBeVisible();
 
   // Click on 'Origin' tab and verify content
