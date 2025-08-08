@@ -6,6 +6,8 @@ test('Validate Auto Complete with multiple and single color input', async ({ pag
   await page.goto('https://demoqa.com/');
 
   // Navigate to Widgets > Auto Complete
+  await page.waitForSelector("//h5[normalize-space()='Widgets']", { timeout: 20000 });
+  await page.locator("//h5[normalize-space()='Widgets']").scrollIntoViewIfNeeded();
   await page.locator("//h5[normalize-space()='Widgets']").click();
   await page.locator(loc.autoCompleteMenu).click();
 

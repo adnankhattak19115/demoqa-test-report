@@ -142,6 +142,8 @@ export async function isToolsqaImageVisible(page: Page): Promise<boolean> {
 }
 
 export async function navigateToBrokenLinks(page: Page) {
+  await page.waitForSelector(brokenLinksLocators.elementsCard, { timeout: 20000 });
+  await page.locator(brokenLinksLocators.elementsCard).scrollIntoViewIfNeeded();
   await page.locator(brokenLinksLocators.elementsCard).click();
   await page.locator(brokenLinksLocators.brokenLinksButton).click();
 }

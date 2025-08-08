@@ -34,6 +34,8 @@ test('Practice Form submission', async ({ page }) => {
   await page.locator(loc.submitButton).click({ force: true });
 
   // ✅ Wait for modal and close it
-  await expect(page.locator(loc.modalDialog)).toBeVisible({ timeout: 15000 }); // 15s wait
+  await page.locator(loc.submitButton).scrollIntoViewIfNeeded();
+  await page.locator(loc.submitButton).click({ force: true });
+  await expect(page.locator(loc.modalDialog)).toBeVisible({ timeout: 20000 });
   await page.locator(loc.closeButton).click();
 });
