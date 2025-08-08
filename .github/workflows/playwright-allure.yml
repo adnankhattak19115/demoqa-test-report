@@ -25,8 +25,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
-        run: npx playwright test --reporter=line
+      - name: Run Playwright tests in headless mode
+        run: npx playwright test --reporter=line --headless
 
       - name: Generate Allure Report
         run: |

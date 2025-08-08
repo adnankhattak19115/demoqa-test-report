@@ -5,7 +5,7 @@ export default defineConfig({
   timeout: 60000,
   // workers: 1,
   use: {
-    headless: false, // 👈 show browser
+    headless: true, // 👈 show browser
     browserName: 'chromium', // 👈 use Chrome
     viewport: { width: 1920, height: 1080 },
     ignoreHTTPSErrors: true,
