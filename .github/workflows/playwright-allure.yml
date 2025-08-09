@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
+      - name: Install dependencies completely
         run: npm ci
 
       - name: Install Playwright browsers
